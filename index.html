@@ -242,13 +242,13 @@
             font-weight: 600;
         }
         
-        /* ===== 核心数据强化样式 - 金色高光 ===== */
+        /* ===== 核心数据强化样式 - 浅色高光 ===== */
         .data-highlight {
-            color: var(--accent);
+            color: rgba(255, 255, 255, 0.92);
             font-weight: 700;
             position: relative;
             display: inline-block;
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            text-shadow: none;
         }
         
         .data-highlight::after {
@@ -258,8 +258,8 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            opacity: 0.4;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+            opacity: 0.5;
         }
         
         /* Hero 标题克制渐变 */
@@ -270,11 +270,11 @@
             background-clip: text !important;
         }
         
-        /* Hero 数据指标金色 */
+        /* Hero 数据指标浅色 */
         .hero-proof-metric {
-            color: var(--accent) !important;
+            color: rgba(255, 255, 255, 0.88) !important;
             font-weight: 700;
-            text-shadow: 0 0 16px rgba(212, 175, 55, 0.25);
+            text-shadow: none;
         }
         
         .data-card {
@@ -2044,7 +2044,7 @@
         }
         
         .project-evidence-item:hover {
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(255, 255, 255, 0.14);
             transform: translateY(-2px);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
@@ -2117,10 +2117,10 @@
         }
         
         .project-tag:hover {
-            background: rgba(212, 175, 55, 0.1);
-            border-color: rgba(212, 175, 55, 0.25);
-            color: var(--accent);
-            box-shadow: 0 0 8px rgba(212, 175, 55, 0.1);
+            background: rgba(255, 255, 255, 0.048);
+            border-color: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.82);
+            box-shadow: none;
         }
         
         .project-image {
@@ -2435,8 +2435,8 @@
         
         .portfolio-item:hover {
             transform: translateY(-2px);
-            border-color: rgba(212, 175, 55, 0.25);
-            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22), 0 0 24px rgba(212, 175, 55, 0.08);
+            border-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
         }
         
         .portfolio-item.hidden {
@@ -2466,12 +2466,12 @@
         .portfolio-thumb::after {
             content: '';
             position: absolute;
-            left: 10px;
-            right: 10px;
-            bottom: 10px;
-            height: 36px;
-            border-radius: 14px;
-            background: var(--image-bottom-mask-soft);
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            height: 32px;
+            border-radius: 12px;
+            background: linear-gradient(180deg, rgba(6, 6, 6, 0) 0%, rgba(6, 6, 6, 0.14) 32%, rgba(6, 6, 6, 0.48) 100%);
             pointer-events: none;
             z-index: 1;
         }
@@ -2536,13 +2536,15 @@
         }
         
         .portfolio-info {
-            padding: 14px 16px 16px;
+            padding: 12px 16px 16px;
             position: relative;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 7px;
             flex: 1;
+            border-top: 1px solid rgba(255, 255, 255, 0.028);
+            background: linear-gradient(180deg, rgba(16, 16, 16, 0.96) 0%, rgba(14, 14, 14, 0.98) 100%);
         }
 
         .portfolio-topline {
@@ -2550,8 +2552,8 @@
             align-items: center;
             justify-content: space-between;
             gap: 5px;
-            padding-bottom: 6px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.032);
         }
 
         .portfolio-case-index {
@@ -2576,11 +2578,11 @@
             min-width: 0;
             padding: 2px 6px;
             border-radius: 999px;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.25);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 9px;
             font-weight: 600;
-            color: var(--accent);
+            color: rgba(255, 255, 255, 0.72);
             line-height: 1.26;
         }
 
@@ -2589,9 +2591,9 @@
             width: 4px;
             height: 4px;
             border-radius: 999px;
-            background: var(--accent);
+            background: rgba(255, 255, 255, 0.52);
             flex-shrink: 0;
-            box-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
+            box-shadow: none;
         }
 
         .portfolio-copy {
@@ -3156,12 +3158,12 @@
             align-items: center;
             padding: 5px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
             font-size: 10px;
             font-weight: 600;
             letter-spacing: 0.002em;
-            color: var(--accent);
+            color: rgba(255, 255, 255, 0.72);
         }
 
         .skills-panel-title {
@@ -3208,24 +3210,24 @@
         .advantage-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0.04) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
             border-radius: 12px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            color: var(--accent);
+            color: rgba(255, 255, 255, 0.72);
             transition: all 0.35s var(--transition-smooth);
-            box-shadow: inset 0 1px 0 rgba(212, 175, 55, 0.1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
         }
 
         .advantage-item:hover .advantage-icon {
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.18) 0%, rgba(212, 175, 55, 0.08) 100%);
-            border-color: rgba(212, 175, 55, 0.35);
-            color: var(--accent-light);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+            border-color: rgba(255, 255, 255, 0.14);
+            color: rgba(255, 255, 255, 0.82);
             transform: scale(1.01);
-            box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+            box-shadow: none;
         }
 
         .advantage-content {
@@ -3288,12 +3290,12 @@
             align-items: center;
             padding: 5px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
             font-size: 10.5px;
             font-weight: 560;
             letter-spacing: 0;
-            color: var(--accent);
+            color: rgba(255, 255, 255, 0.72);
         }
 
         .skill-group-title {
@@ -3330,10 +3332,10 @@
         }
 
         .skill-tag:hover {
-            border-color: rgba(212, 175, 55, 0.25);
-            color: var(--accent);
-            background: rgba(212, 175, 55, 0.08);
-            box-shadow: 0 0 8px rgba(212, 175, 55, 0.1);
+            border-color: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.82);
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: none;
             transform: none;
         }
         
@@ -3526,9 +3528,9 @@
         .timeline-badge {
             padding: 5px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            background: rgba(212, 175, 55, 0.08);
-            color: var(--accent);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
+            color: rgba(255, 255, 255, 0.72);
             font-size: 9.5px;
             font-weight: 640;
             letter-spacing: 0.008em;
@@ -3596,11 +3598,11 @@
         
         .timeline-course {
             font-size: 10.5px;
-            color: var(--accent);
-            background: rgba(212, 175, 55, 0.08);
+            color: rgba(255, 255, 255, 0.72);
+            background: rgba(255, 255, 255, 0.04);
             padding: 6px 11px;
             border-radius: 999px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             font-weight: 550;
             letter-spacing: 0.008em;
         }
@@ -3767,8 +3769,8 @@
         .contact-card:hover {
             transform: translateY(-2px);
             background: linear-gradient(180deg, rgba(18, 18, 18, 0.96) 0%, rgba(10, 10, 10, 0.98) 100%);
-            border-color: rgba(212, 175, 55, 0.25);
-            box-shadow: 0 24px 52px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 175, 55, 0.08);
+            border-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 24px 52px rgba(0, 0, 0, 0.2);
         }
         
         .contact-card-top {
@@ -3786,7 +3788,7 @@
         .contact-card-icon {
             width: 34px;
             height: 34px;
-            color: var(--accent);
+            color: rgba(255, 255, 255, 0.72);
             margin: 0;
             flex-shrink: 0;
             transition: transform 0.28s var(--transition-smooth), color 0.28s var(--transition-smooth);
@@ -4457,11 +4459,11 @@
             }
 
             .portfolio-thumb::after {
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
-                height: 36px;
-                border-radius: 14px;
+                left: 11px;
+                right: 11px;
+                bottom: 11px;
+                height: 30px;
+                border-radius: 12px;
             }
 
             .project-content {
@@ -4848,8 +4850,8 @@
             }
 
             .portfolio-info {
-                padding: 14px 14px 14px;
-                gap: 8px;
+                padding: 12px 14px 14px;
+                gap: 7px;
             }
 
             .portfolio-topline {
@@ -5073,8 +5075,8 @@
                 left: 10px;
                 right: 10px;
                 bottom: 10px;
-                height: 40px;
-                border-radius: 14px;
+                height: 28px;
+                border-radius: 12px;
             }
 
             .modal-content {
@@ -5353,7 +5355,7 @@
                                 <div class="portfolio-reading-item">
                                     <span class="portfolio-reading-index">01</span>
                                     <div class="portfolio-reading-copy">
-                                        <p class="portfolio-reading-title">古建交互作品</p>
+                                        <p class="portfolio-reading-title">古建交互展卷</p>
                                         <p class="portfolio-reading-note">3D 场景组织与中文实时排版系统。</p>
                                     </div>
                                 </div>
@@ -5384,7 +5386,7 @@
                 </div>
                 <div class="portfolio-grid fade-in fade-in-delay-1">
                     <article class="portfolio-item" onclick="scrollToSection('project-heritage')">
-                        <div class="portfolio-thumb"><img class="image-focus-heritage" src="assets/named/heritage-home-overview.png" alt="中国古代建筑交互作品案例封面" loading="lazy"></div>
+                        <div class="portfolio-thumb"><img class="image-focus-heritage" src="assets/named/heritage-home-overview.png" alt="中国古代建筑交互展卷案例封面" loading="lazy"></div>
                         <div class="portfolio-info">
                             <div class="portfolio-topline">
                                 <span class="portfolio-case-index">案例 01</span>
@@ -5392,8 +5394,8 @@
                             </div>
                             <div class="portfolio-copy">
                                 <span class="portfolio-category">独立推进的比赛项目</span>
-                                <h3 class="portfolio-title">中国古代建筑交互作品 / 古建拼搭工坊</h3>
-                                <p class="portfolio-desc">围绕观看、讲解、生成与拼搭四段体验，建立浏览器内 3D 交互作品系统。</p>
+                                <h3 class="portfolio-title">中国古代建筑交互展卷 / 四合院数字作品</h3>
+                                <p class="portfolio-desc">围绕观看、细看与搭建三段体验，建立浏览器内 3D 交互作品系统。</p>
                             </div>
                             <div class="portfolio-meta-row portfolio-meta-row--balanced">
                                 <div class="portfolio-meta-chip">
@@ -5523,7 +5525,7 @@
                             <div class="projects-rail-item">
                                 <span class="projects-rail-index">01</span>
                                 <div class="projects-rail-copy">
-                                    <p class="projects-rail-title">古建交互作品</p>
+                                    <p class="projects-rail-title">古建交互展卷</p>
                                     <p class="projects-rail-note">3D 场景状态、中文排版与作品系统表达如何组织成一条主线。</p>
                                 </div>
                             </div>
@@ -5561,7 +5563,7 @@
                 <!-- 项目1 -->
                 <div class="project-item fade-in" data-tooltip="3D 交互与中文实时排版实践" id="project-heritage">
                     <div class="project-image">
-                        <img class="image-focus-heritage" src="assets/named/heritage-home-overview.png" alt="中国古代建筑交互作品首页舞台与专题切换" loading="lazy">
+                        <img class="image-focus-heritage" src="assets/named/heritage-home-overview.png" alt="中国古代建筑交互展卷首页舞台与四合院开场" loading="lazy">
                     </div>
                     <div class="project-content">
                         <div class="project-copy">
@@ -5570,7 +5572,7 @@
                                 <span class="project-meta-pill">2026.04 - 至今</span>
                                 <span class="project-meta-pill">独立推进的比赛项目</span>
                             </div>
-                            <h3 class="project-title">中国古代建筑交互作品 / 古建拼搭工坊</h3>
+                            <h3 class="project-title">中国古代建筑交互展卷 / 四合院数字作品</h3>
                             <div class="project-opening">
                                 <p class="project-desc">这个项目最先说明，我不仅能组织复杂交互作品的体验链路，也能把 3D 场景状态、中文实时排版与生成式构件规则收束成同一套作品系统。</p>
                             </div>
@@ -5578,15 +5580,15 @@
                         <div class="project-results">
                             <div class="project-result">
                                 <span class="project-result-label">主题范围</span>
-                                <span class="project-result-text">围绕民居、官府、皇宫、桥梁<span class="highlight data-highlight">4 类主题</span>独立推进兼具观看、讲解、生成、拼搭的浏览器内 3D 交互作品。</span>
+                                <span class="project-result-text">围绕民居、官府、皇宫、桥梁<span class="highlight data-highlight">4 类主题</span>，组织一套可观察、可比较、可交互细看的数字展卷与拆读界面。</span>
                             </div>
                             <div class="project-result">
                                 <span class="project-result-label">体验主线</span>
-                                <span class="project-result-text">把体验主线收束为"专题切换—观景台—构景台—工坊"4 段流程，并落实到首页、建筑独立页、平台页、工坊页等<span class="highlight data-highlight">9 个主路由</span>。</span>
+                                <span class="project-result-text">首页以四合院开场，建立"院门收住来路、正房稳住中线、厢房陪出起居分寸"的空间叙事，再引导进入细看页与搭建台。</span>
                             </div>
                             <div class="project-result">
-                                <span class="project-result-label">验证链路</span>
-                                <span class="project-result-text">保留 test:prompt、test:engine 与 heritage-engine.test.ts 等验证脚本，<span class="highlight data-highlight">24 个测试用例</span>、<span class="highlight data-highlight">167 条断言</span>可校验几何结果。</span>
+                                <span class="project-result-label">技术实现</span>
+                                <span class="project-result-text">3D 主舞台嵌入首页背景，中文实时排版随舞台状态联动，保留<span class="highlight data-highlight">24 个测试用例</span>、<span class="highlight data-highlight">167 条断言</span>校验几何结果。</span>
                             </div>
                         </div>
                         <div class="project-tail">
@@ -5610,12 +5612,12 @@
                                     <span class="project-evidence-caption">首页舞台</span>
                                 </div>
                                 <div class="project-evidence-item">
-                                    <img src="assets/named/heritage-topic-switcher-home.png" alt="专题切换">
-                                    <span class="project-evidence-caption">专题切换</span>
+                                    <img src="assets/named/heritage-topic-switcher-home.png" alt="四合院细看入口">
+                                    <span class="project-evidence-caption">细看入口</span>
                                 </div>
                                 <div class="project-evidence-item">
-                                    <img src="assets/named/heritage-workbench-desktop.png" alt="工坊界面">
-                                    <span class="project-evidence-caption">拼搭工坊</span>
+                                    <img src="assets/named/heritage-workbench-desktop.png" alt="搭建台界面">
+                                    <span class="project-evidence-caption">搭建台</span>
                                 </div>
                             </div>
                         </div>
