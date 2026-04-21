@@ -1,0 +1,52 @@
+{
+  "updated_at_note": "Imported from Hermes image cache after user upload",
+  "pineapple_stickers": [
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/pineapple-stickers/pineapple-sticker-01-flat-photo.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_9ca394b32d71.jpg",
+      "description": "凤梨贴纸成品拍摄图（单张菱形贴纸）"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/pineapple-stickers/pineapple-sticker-02-size-layout.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_fb09c50f4bea.jpg",
+      "description": "凤梨贴纸规格版式图（88x88mm）"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/pineapple-stickers/pineapple-sticker-03-print-sheet-closeup.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_9de600516531.jpg",
+      "description": "凤梨贴纸印刷近景图（局部排版/材质）"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/pineapple-stickers/pineapple-sticker-04-print-sheet-machine.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_cbc2dc2e25af.jpg",
+      "description": "凤梨贴纸印刷上机图（整张排版）"
+    }
+  ],
+  "grape_open_box": [
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/grape-open-box/grape-open-box-01-dieline.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_7336bafd474d.jpg",
+      "description": "葡萄开口盒刀版展开图"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/grape-open-box/grape-open-box-02-banner-slogan.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_bd5b6778eeda.jpg",
+      "description": "葡萄开口盒主视觉横幅（文案版）"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/grape-open-box/grape-open-box-03-background-artwork.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_ec984db79337.jpg",
+      "description": "葡萄开口盒背景氛围图（无字版）"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/grape-open-box/grape-open-box-04-grape-title-layout.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_ad628a0221ed.jpg",
+      "description": "葡萄开口盒标题主视觉（葡萄+标题）"
+    },
+    {
+      "file": "/mnt/d/hermes/profile/resume0416-site-lab/rebuild-v1/assets/design/grape-open-box/grape-open-box-05-grape-illustration.jpg",
+      "source_cache": "/home/lsb/.hermes/image_cache/img_db40443bd982.jpg",
+      "description": "葡萄开口盒葡萄插画图（无字近景）"
+    }
+  ]
+}
