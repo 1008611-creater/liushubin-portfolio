@@ -937,7 +937,8 @@ html[data-scroll="locked"] body {
 .spiral__ticks {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  /* 间距留到 14px：序号按钮向外扩热区到 48px 时，相邻热区才不会互相压住 */
+  gap: 14px;
 }
 
 .spiral__tick {
@@ -1893,6 +1894,47 @@ html[data-scroll="locked"] body {
 @media (hover: none) {
   .index__list:hover .index__link {
     opacity: 1;
+  }
+}
+
+/*
+ * 触屏热区补偿
+ *
+ * 下面这些控件的视觉尺寸是按桌面端排版定的（26 到 40px 高），
+ * 在手机上按 44x44 的最小触控目标标准全部偏小。
+ * 放大视觉尺寸会破坏已经定稿的 chrome 比例，所以用透明伪元素把可点区域向外扩，
+ * 视觉不变，手指能命中的范围达标。伪元素只在没有精确指针的设备上生成。
+ */
+@media (hover: none) and (pointer: coarse) {
+  /*
+   * .sound 与 .switch__btn 已经是定位元素，不能再写 position: relative，会覆盖掉 fixed。
+   * 热区取 48px 而不是 44px：手指落点在 44px 边界上时，浏览器按开区间判定会落空，
+   * 留 2px 余量才能稳定命中。
+   */
+  .chrome__brand,
+  .chrome__menu,
+  .chrome__back,
+  .spiral__tick,
+  .detail__crumb,
+  .resume__facts dd a {
+    position: relative;
+  }
+
+  .chrome__brand::after,
+  .chrome__menu::after,
+  .chrome__back::after,
+  .switch__btn::after,
+  .sound::after,
+  .spiral__tick::after,
+  .detail__crumb::after,
+  .resume__facts dd a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100%, 48px);
+    height: max(100%, 48px);
+    transform: translate(-50%, -50%);
   }
 }
 
