@@ -29,3 +29,6 @@ docs/timeline/_intake
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
+.env*
