@@ -2352,7 +2352,8 @@ html[data-scroll="locked"] body {
   }
 
   .section-head__tag {
-    color: var(--accent) !important;
+    /* 7.6pt 的小字在纸面上属于正文尺寸，朱砂在纯白上只有 3.35:1，必须换成深一档的 accent-deep（6.25:1） */
+    color: var(--accent-deep) !important;
     font-size: 7.6pt;
     letter-spacing: 0.16em;
   }
@@ -2384,7 +2385,7 @@ html[data-scroll="locked"] body {
 
   .resume__figure-num {
     font-size: 15pt;
-    color: var(--accent) !important;
+    color: var(--accent-deep) !important;
   }
 
   .resume__figure-num--long {
@@ -2393,7 +2394,7 @@ html[data-scroll="locked"] body {
 
   .resume__figure-unit {
     font-size: 7.4pt;
-    color: var(--accent) !important;
+    color: var(--accent-deep) !important;
   }
 
   .resume__figure-label {

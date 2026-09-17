@@ -26,7 +26,13 @@
   /* ---- 墨（文字） ---- */
   --text: #f2ede4;
   --text-muted: #8f8981;
-  --text-faint: #5d5952;
+  /*
+   * faint 只表示「层级最低」，不表示「可以看不清」。
+   * 它承载的是 13px 图注与元信息，属于正文尺寸，必须过 WCAG AA 的 4.5:1。
+   * 原值 #5d5952 在 --ink 上只有 2.82:1，实测被 axe 判为 serious。
+   * 现值在 --ink 上 4.84:1、在 --ink-raised 上 4.56:1，与 --text-muted 仍保持一档差距。
+   */
+  --text-faint: #847d73;
   --text-on-bone: #0b0b0c;
   --text-on-bone-muted: #6d675e;
 
