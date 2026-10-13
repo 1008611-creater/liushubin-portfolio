@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-13",
+  "scope": "Sanitized source snapshots recovered from running deployments; production untouched; excluded environment credentials, user data, runtime storage, generated/build output and unreviewed media.",
+  "repository": "1008611-creater/liushubin-portfolio",
+  "variants": [
+    {
+      "name": "published-static",
+      "source": "jianli-static",
+      "server": "kaogong",
+      "sourcePath": "/var/www/jianli",
+      "excludedSensitiveAndRuntimeFiles": true,
+      "files": [
+        {
+          "path": "assets/fonts/bricolage-500.woff2",
+          "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd"
+        },
+        {
+          "path": "assets/fonts/bricolage-600.woff2",
+          "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd"
+        },
+        {
+          "path": "assets/fonts/bricolage-700.woff2",
+          "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd"
+        },
+        {
+          "path": "assets/fonts/bricolage-800.woff2",
+          "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd"
+        },
+        {
+          "path": "assets/index-CuDcFVKR.css",
+          "sha256": "b931ef7e52149c51762d34ac572b8e93ebfb1e5d139dd9cc5b8423346c81ae22"
+        },
+        {
+          "path": "assets/index-Dkg49WoZ.js",
+          "sha256": "95e60992d26392d9ee04cabce6c7a70eb41633c29b5cef69a4d8a967cf58a2f7"
+        },
+        {
+          "path": "assets/r3f-CRYxMoYC.js",
+          "sha256": "514ef56f4cf74f878a219cf4efea163e55a18700a5e3039ab449cabe4011a074"
+        },
+        {
+          "path": "assets/react-BCzPxJ_Z.js",
+          "sha256": "2e0249199d87419dca5f4b08fa5563b652876148024cf0fac74cb821d69b0bd9"
+        },
+        {
+          "path": "assets/three-BauVGtdi.js",
+          "sha256": "58369c56299e144487668d83d9e146d32e2e24423614d2a568497254ad9d41c6"
+        },
+        {
+          "path": "index.html",
+          "sha256": "48eb28732acb32f6afedb3f1e539c614f1ebcf3d2beaebc096f3e721652a7422"
+        },
+        {
+          "path": "portfolio/assets/bricolage-500-Cre6nC2_.woff2",
+          "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd"
+        },
+        {
+          "path": "portfolio/assets/index-BrO2n9Vg.css",
+          "sha256": "43cc2d33e6c9faac8e5a26349ac2e3b00a171d92c7bc9dbf56693fa4ec1c85ab"
+        },
+        {
+          "path": "portfolio/assets/index-CY3o3Dpj.js",
+          "sha256": "f2fc0ea420501be2b1c7768eab3367acddfd51f06ed25d2bf69ad1dd536a796e"
+        },
+        {
+          "path": "portfolio/favicon.svg",
+          "sha256": "e36841452da4d7dfbeda552348d4c4525408fb60ec97202642aade4ebcdac3cf"
+        },
+        {
+          "path": "portfolio/index.html",
+          "sha256": "56f7a6830436f9cbf2be70aca6d7acf3a83d14eb3277c7af84b1a45637d63fdc"
+        }
+      ]
+    }
+  ]
+}
